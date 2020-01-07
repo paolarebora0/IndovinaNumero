@@ -105,6 +105,8 @@ public class NumeroController {
 			if(risultato != 0) {
 				txtMessaggi.appendText("Hai perso!");
 				txtMessaggi.appendText(String.format("\nIl numero segreto era %d", model.getSegreto()));
+				boxControllopartita.setDisable(false);
+				boxControlloTentativi.setDisable(true);
 			}
 		}
 
